@@ -1,0 +1,4 @@
+{"type":"system","subtype":"init","sessionId":"sess-1","cwd":"D:/Users/kevin/Desktop/claude code小工具","timestamp":"2026-04-28T10:00:00Z"}
+{"type":"assistant","message":{"content":[{"type":"tool_use","name":"Edit","input":{"file_path":"foo.ps1"}}]},"timestamp":"2026-04-28T10:01:00Z"}
+{"type":"user","message":{"content":[{"type":"tool_result"}]},"timestamp":"2026-04-28T10:01:05Z"}
+{"type":"assistant","message":{"content":[{"type":"tool_use","name":"Bash","input":{"command":"git status"}}]},"timestamp":"2026-04-28T10:02:00Z"}

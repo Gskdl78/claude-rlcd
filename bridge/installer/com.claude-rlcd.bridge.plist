@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  macOS launchd template. Install steps:
+    1) Edit BRIDGE_PATH below (the absolute path to this repo's bridge/).
+    2) Optionally edit CLAUDE_RLCD_HOST.
+    3) cp this file to ~/Library/LaunchAgents/com.claude-rlcd.bridge.plist
+    4) launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.claude-rlcd.bridge.plist
+       (or simply: launchctl load -w ~/Library/LaunchAgents/...)
+
+  Or use the included install.sh which fills BRIDGE_PATH automatically.
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+        "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.claude-rlcd.bridge</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>__BRIDGE_PATH__/installer/start-bridge.sh</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+        <key>CLAUDE_RLCD_HOST</key>
+        <string>claude-rlcd.local</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>__HOME__/Library/Logs/claude-rlcd-bridge.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>__HOME__/Library/Logs/claude-rlcd-bridge.err.log</string>
+</dict>
+</plist>

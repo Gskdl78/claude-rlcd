@@ -1,0 +1,11 @@
+<!doctype html><meta charset=utf-8><title>claude-rlcd Wi-Fi 設定</title>
+<style>body{font-family:sans-serif;max-width:400px;margin:32px auto;padding:0 16px}
+input,button{font-size:18px;width:100%;margin:6px 0;padding:10px;box-sizing:border-box}
+.err{color:#a33;margin:8px 0}</style>
+<h2>claude-rlcd Wi-Fi 設定</h2>
+<p>請輸入家裡 2.4 GHz Wi-Fi（不支援 5 GHz）</p>
+<form method=POST action=/save>
+  <label>SSID<input name=ssid required></label>
+  <label>密碼<input name=psk type=password></label>
+  <button>儲存並重啟</button>
+</form>

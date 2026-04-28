@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "timestamp": 1714291200000,
+  "fiveHour":  { "utilization": 0.62, "reset": 1714305600 },
+  "sevenDay":  { "utilization": 0.31, "reset": 1714896000 },
+  "opus":      { "utilization": 0.48 }
+}

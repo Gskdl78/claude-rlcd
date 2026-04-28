@@ -1,0 +1,4 @@
+## Managed dependencies for net_manager.
+## ESP-IDF v5.5 moved mdns out of the core into the Component Manager registry.
+dependencies:
+  espressif/mdns: "^1.2"

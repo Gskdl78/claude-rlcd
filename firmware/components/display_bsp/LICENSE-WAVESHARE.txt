@@ -1,0 +1,9 @@
+The files in this directory (display_bsp.cpp, display_bsp.h, lvgl_bsp.cpp,
+lvgl_bsp.h) are vendored from Waveshare's official ESP32-S3-RLCD-4.2 examples:
+
+  https://github.com/waveshareteam/ESP32-S3-RLCD-4.2/tree/main/02_Example/ESP-IDF/08_LVGL_V8_Test
+
+They are redistributed here under their original license terms. The CMakeLists.txt
+in this directory is adapted to register both BSP files under our component name.
+
+Updates: pull from upstream and overwrite when Waveshare publishes BSP fixes.

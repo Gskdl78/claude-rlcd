@@ -1,0 +1,38 @@
+# Node
+node_modules/
+*.log
+package-lock.json
+
+# Bridge
+bridge/dist/
+bridge/.env
+bridge/installer/start-bridge.local.cmd
+bridge/installer/com.claude-rlcd.bridge.local.plist
+
+# ESP-IDF
+firmware/build/
+firmware/sdkconfig
+firmware/sdkconfig.old
+firmware/dependencies.lock
+firmware/managed_components/
+
+# Font conversion staging (regenerated locally; only the .c is committed)
+firmware/components/ui_renderer/fonts/node_modules/
+firmware/components/ui_renderer/fonts/package*.json
+firmware/components/ui_renderer/fonts/*.ttf
+firmware/components/ui_renderer/fonts/*.ttc
+firmware/components/ui_renderer/fonts/*.otf
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Internal planning docs (kept locally; not for public repo)
+.superpowers/
+docs/superpowers/

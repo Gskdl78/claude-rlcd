@@ -1,0 +1,5 @@
+## Top-level managed dependencies.
+## Pin LVGL to v8.x — the ui_renderer code uses LVGL v8 APIs
+## (lv_scr_load, lv_disp_drv_register, etc.). LVGL v9 has breaking changes.
+dependencies:
+  lvgl/lvgl: "^8.3.0"
